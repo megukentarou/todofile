@@ -2,18 +2,26 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+
 
 class User extends Authenticatable
 {
     use Notifiable;
 
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'updated_at';
+    protected $table = 'users';
+    protected $connection = 'mysql';
+    protected $primaryKey = "id";
+    public $timestamp = true;
+
     /**
      * The attributes that are mass assignable.
      *
+     * @return Illuminate\Contracts\Auth\MustVerifyEmail;
      * @var array
      */
     protected $fillable = [
@@ -37,7 +45,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
+    /**
+     * リレーション (1対多の関係)
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function words() // 複数形
     {
         return $this->hasMany('App\Models\Word');
