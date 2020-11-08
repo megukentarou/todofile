@@ -15,7 +15,7 @@
                 フレデリック・アミエル
                 </div>
                 
-                <img src="https://pixabay.com/get/53e0d2444b50a414f6d1867dda353678153bd9e65354784c_1920.jpg" width="100%" height="100%" alt="画像">
+                <!-- <img src="https://pixabay.com/get/53e0d2444b50a414f6d1867dda353678153bd9e65354784c_1920.jpg" width="100%" height="100%" alt="画像"> -->
                 
                 <div class="card-body">
                     <h5 class="card-text">アプリの説明</h5>
