@@ -42,7 +42,7 @@
                         <div class="card-body d-flex flex-row">
                         </div>
                         <div class="card-body pt-0 pb-2">
-                            行動目標
+                            印象に残った言葉
                             <h3 class="h4 card-title">
                             {{ $word->text }}
                             </h3>
