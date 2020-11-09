@@ -69,7 +69,7 @@
 
                                 <br>
                                 <a class="btn btn-outline-primary btn-lg" href="{{ route('register') }}">
-                                    {{ __('新規ユーザ登録の方') }}
+                                    {{ __('新規ユーザー登録の方') }}
                                 </a>
                                 <br>
                             </div>

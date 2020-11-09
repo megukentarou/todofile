@@ -25,7 +25,7 @@
                     他の人の投稿も見れますので、良かったなと思う内容はお互いどんどん取り入れていきましょう。</p>
                     
                     <div class="aaa">
-                    <a class="btn btn-success btn-lg" href="{{ route('words.index')}}" class="card-link"><h5>投稿一覧を見る</h5><h6>(ログインがまだの方はログインページに移ります)</h6></a>
+                    <a class="btn btn-success btn-lg" href="{{ route('words.index')}}" class="card-link"><h5>投稿一覧を見る</h5></a>
                     
                     </div>
                 </div>
