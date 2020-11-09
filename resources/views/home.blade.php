@@ -14,7 +14,7 @@
 
                 フレデリック・アミエル
                 </div>
-                <img src="https://pixabay.com/get/53e0d2444b50a414f6d1867dda353678153bd6e15058744a_1920.jpg" width="100%" height="100%" alt="ホーム画面の画像">
+                <!-- <img src="https://pixabay.com/get/53e0d2444b50a414f6d1867dda353678153bd6e15058744a_1920.jpg" width="100%" height="100%" alt="ホーム画面の画像"> -->
               
                 
                 <div class="card-body">
