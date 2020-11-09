@@ -45,7 +45,8 @@
                         </label>
                         <textarea class="form-control" name="action" id="exampleFormControlTextarea３" rows="7">{{ $word->action }}</textarea>
                     </div>
-                    <input class="btn btn-primary" type="submit" value="更新する">              
+                    <input class="btn btn-primary" type="submit" value="更新する"> 
+                    <a href="{{ route('words.show', ['id' => $word->id]) }}" class="btn btn-light bg-light border-dark" >詳細に戻る</a>            
                     </form>
                 </div>
             </div>

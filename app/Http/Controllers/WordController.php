@@ -67,7 +67,7 @@ class WordController extends Controller
 
         $word->save();
 
-        // \Session::flash('flash_message', '保存しました');
+        \Session::flash('flash_message', '保存しました');
         return redirect('words/index');
     }
 
@@ -116,7 +116,7 @@ class WordController extends Controller
 
         $word->save();
 
-        // \Session::flash('flash_message', '更新しました');
+        \Session::flash('flash_message', '更新しました');
         return redirect('words/index');
     }
 
@@ -131,7 +131,7 @@ class WordController extends Controller
         $word = Word::find($id);
         $word->delete();
 
-        // \Session::flash('flash_message', '削除しました');
+        \Session::flash('flash_message', '削除しました');
         return redirect('words/index');
     }
 }

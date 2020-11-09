@@ -12,7 +12,9 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ $user->name }}さんの投稿一覧</div>
-                
+                <div class="card-body">
+                    <a  class="btn btn-light bg-light border-dark" href="{{ route('words.index') }}">全件表示に戻る</a>
+                </div>
                 @foreach($words as $word)
                 <div class="card">
                     <div class="card-body d-flex flex-row">

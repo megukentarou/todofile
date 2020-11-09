@@ -23,20 +23,22 @@
                     <p class="card-text">
                     {{ $word->action }}</p>
                     
-                    @if( Auth::id() === $word->user_id )
-                    <!-- マイページの一覧 -->
-                    <a href="{{ route('users.show', ['name' => Auth::user()->name]) }}" class="btn btn-light bg-light border-dark" >マイページの一覧に戻る</a>
-                    @else
-                    <!-- 全一覧 -->
-                    <a href="{{ route('words.index')}}" class="btn btn-light bg-light border-dark" >一覧に戻る</a>
-                    @endif
+                    <div class="back">
+                        @if( Auth::id() === $word->user_id )
+                        <!-- マイページの一覧 -->
+                        <a href="{{ route('users.show', ['name' => Auth::user()->name]) }}" class="btn btn-light bg-light border-dark" >マイページの一覧に戻る</a>
+                        @else
+                        <!-- 全一覧 -->
+                        <a href="{{ route('words.index')}}" class="btn btn-light bg-light border-dark" >一覧に戻る</a>
+                        @endif
+                    </div><br>
                     
                     @if( Auth::id() === $word->user_id )
                     <!-- 編集機能 -->
                     <form method="GET" action="{{ route('words.edit', ['id' => $word->id]) }}">
                     @csrf
                     <input class="btn btn-primary" type="submit" value="編集する">
-                    </form>
+                    </form><br>
                     <!-- 削除機能 -->
                     <form method="POST" action="{{ route('words.destroy', ['id' => $word->id]) }}" id="delete_{{ $word->id }}">
                     @csrf
