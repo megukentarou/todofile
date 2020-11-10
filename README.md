@@ -6,8 +6,11 @@ ToDoから習慣化にしていく為の投稿アプリです
 ## URL
 http://todofile.herokuapp.com/
 
-# このアプリを開発した経緯
-・
+# テスト使用の方法
+ログイン情報
+email : test@testmail
+password : testtest
+デフォルトの投稿内容が見れます
 
 # アプリの使い方
 印象に残った言葉と、自分の印象、具体的な行動内容をそれぞれ投稿します。
